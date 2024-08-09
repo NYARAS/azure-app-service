@@ -19,10 +19,6 @@ resource "azurerm_linux_web_app" "linux_webapp" {
   service_plan_id = azurerm_service_plan.asp.id
 
   site_config {
-    application_stack {
-      java_version = 8
-      java_server = "JBOSSEAP"
-      java_server_version = "7"
-    }
+    always_on = false
   }
 }
