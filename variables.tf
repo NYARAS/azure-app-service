@@ -21,3 +21,9 @@ variable "resource_group_location" {
     description = "The location of the resource group."
     default = "East US"
 }
+
+variable "sku" {
+  type = string
+  description = "App service sku."
+  default = "B1"
+}
